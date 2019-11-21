@@ -56,6 +56,7 @@ public class AuthInterceptor implements RequestInterceptor, GlobalFilter {
     public void apply(RequestTemplate requestTemplate) {
         RequestAttributes requestAttributes = RequestContextHolder.getRequestAttributes();
         if (requestAttributes == null) {
+            System.out.println("SUCCESS");
             return;
         }
         HttpServletRequest request = ((ServletRequestAttributes) requestAttributes).getRequest();
