@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: st-consumer-gate
+  profiles:
+    active: dev
